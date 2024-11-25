@@ -62,29 +62,59 @@ header .bio {
     margin-bottom: 20px;
 }
 
-.skills-container {
+/* Basic style for the tools */
+.tools-container {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
-.skills-container span {
-    font-size: 1.2em;
-    padding: 10px 20px;
+.tool {
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
     background-color: #f1f1f1;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: background-color 0.3s ease;
+    color: #333;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.skills-container span i {
-    margin-right: 8px;
+/* Hover Effect */
+.tool:hover {
+    background-color: #4CAF50;
+    transform: scale(1.1);
 }
 
-.skills-container span:hover {
-    background-color: #f1f1f1 !important;
-    color: #333 !important;
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.tool {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Add staggered animation for each tool */
+.tool:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.tool:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.tool:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.tool:nth-child(4) {
+    animation-delay: 0.8s;
 }
 
 /* Projects Section */
