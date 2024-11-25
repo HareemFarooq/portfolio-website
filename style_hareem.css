@@ -9,27 +9,27 @@
 /* Body styling */
 body {
     font-family: Arial, sans-serif; /* Simple and modern font */
-    background-color: #f5f5f5; /* Light grey background */
-    color: #333; /* Dark grey text */
+    background-color: #2d2d2d; /* Dark grey background */
+    color: #f5f5f5; /* Light grey text */
     line-height: 1.6;
     padding: 20px;
 }
 
 /* Header Styling */
 header {
-    background-color: #ffffff; /* White background for header */
+    background-color: #1c1c1c; /* Black background for header */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for header */
 }
 
 header h1 {
     font-size: 2.5rem;
-    color: #333; /* Dark grey color for the name */
+    color: #f5f5f5; /* Light grey color for the name */
 }
 
 header .bio {
-    color: #666; /* Medium grey text for bio */
+    color: #bbb; /* Lighter grey text for bio */
     font-size: 1.1rem;
 }
 
@@ -38,24 +38,24 @@ header .bio {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
-    background-color: #ffffff; /* White background for tools section */
+    background-color: #333; /* Dark grey background for tools section */
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
 }
 
 .tool {
     font-size: 1.5rem;
     padding: 10px 15px;
     margin: 5px;
-    background-color: #e0e0e0; /* Light grey background for each tool */
-    color: #333; /* Dark grey color for text */
+    background-color: #555; /* Medium grey background for each tool */
+    color: #f5f5f5; /* Light grey color for text */
     border-radius: 5px;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .tool:hover {
-    background-color: #cccccc; /* Darker grey when hovering */
+    background-color: #777; /* Lighter grey when hovering */
     transform: scale(1.1);
 }
 
@@ -70,7 +70,7 @@ header .bio {
 }
 
 .projects a {
-    color: #333; /* Dark grey color for project links */
+    color: #f5f5f5; /* Light grey color for project links */
     text-decoration: none;
 }
 
@@ -94,13 +94,15 @@ header .bio {
 .contact textarea {
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #444; /* Dark border for inputs */
     border-radius: 4px;
     font-size: 1rem;
+    background-color: #333; /* Dark grey background */
+    color: #f5f5f5; /* Light grey text */
 }
 
 .contact button {
-    background-color: #444; /* Dark grey for the button */
+    background-color: #444; /* Dark grey button */
     color: white;
     padding: 10px;
     border: none;
@@ -134,7 +136,9 @@ header .bio {
 footer {
     text-align: center;
     margin-top: 40px;
-    color: #777;
+    background-color: #1c1c1c; /* Black background for footer */
+    color: #f5f5f5; /* Light grey text */
+    padding: 20px 0;
 }
 
 footer p {
@@ -174,7 +178,7 @@ footer p {
 
 /* Projects Section */
 .projects {
-    background-color: #f9f9f9; /* Light grey background */
+    background-color: #333; /* Dark grey background */
     padding: 40px 20px;
     text-align: center;
 }
@@ -182,6 +186,7 @@ footer p {
 .projects h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    color: #f5f5f5; /* Light grey text for header */
 }
 
 .projects ul {
@@ -194,7 +199,7 @@ footer p {
 
 .projects a {
     text-decoration: none;
-    color: #333; /* Dark grey links */
+    color: #f5f5f5; /* Light grey links */
     font-size: 1.1em;
     transition: color 0.3s ease;
 }
@@ -205,7 +210,7 @@ footer p {
 
 /* Contact Section */
 .contact {
-    background-color: #ffffff;
+    background-color: #1c1c1c; /* Black background */
     padding: 40px 20px;
     text-align: center;
 }
@@ -213,6 +218,7 @@ footer p {
 .contact h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    color: #f5f5f5; /* Light grey text */
 }
 
 .contact form {
@@ -226,13 +232,11 @@ footer p {
     width: 100%;
     max-width: 500px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #444;
     border-radius: 5px;
     font-size: 1em;
-}
-
-.contact textarea {
-    height: 150px;
+    background-color: #333;
+    color: #f5f5f5;
 }
 
 .contact button {
@@ -270,8 +274,8 @@ footer p {
 /* Footer Styles */
 footer {
     text-align: center;
-    background-color: #333;
-    color: white;
+    background-color: #1c1c1c; /* Black background */
+    color: #f5f5f5; /* Light grey text */
     padding: 20px 0;
 }
 
@@ -305,3 +309,5 @@ footer p {
         font-size: 1em;
     }
 }
+
+  
