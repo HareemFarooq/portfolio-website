@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #f5f5f5;
+background-color: #f5f5f5 !important;
     color: #333;
     line-height: 1.6;
     font-size: 16px;
@@ -23,7 +23,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #4CAF50;
+    background-color: #4CAF50 !important;
     color: white;
     padding: 40px 0;
     text-align: center;
@@ -83,8 +83,8 @@ header .bio {
 }
 
 .skills-container span:hover {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #f1f1f1 !important;
+    color: #333 !important;
 }
 
 /* Projects Section */
