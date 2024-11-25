@@ -1,0 +1,95 @@
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #6c63ff;
+    color: white;
+}
+
+header .profile-img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 2.5em;
+}
+
+header .profession {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+header .bio {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.skills, .projects, .contact {
+    padding: 20px;
+    text-align: center;
+}
+
+.skills h2, .projects h2, .contact h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #6c63ff;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.skills-container span {
+    padding: 10px 20px;
+    background: #6c63ff;
+    color: white;
+    border-radius: 5px;
+}
+
+.projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+.projects ul li {
+    margin: 10px 0;
+}
+
+.projects ul li a {
+    text-decoration: none;
+    color: #6c63ff;
+    font-weight: bold;
+}
+
+.contact form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea, .contact button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.contact .social-icons img {
+    width: 30px;
+    margin: 0 5px;
+}
