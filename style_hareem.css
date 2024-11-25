@@ -1,89 +1,144 @@
 
 /* Global Styles */
 * {
+   /* Basic reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
 }
 
+/* Body styling */
 body {
-background-color: #f5f5f5 !important;
-    color: #333;
+    font-family: Arial, sans-serif; /* Change font to something simple and modern */
+    background-color: #f5f5f5; /* Light grey background */
+    color: #333; /* Dark grey text */
     line-height: 1.6;
-    font-size: 16px;
-}
-
-/* Container for the overall layout */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 20px;
 }
 
-/* Header Styles */
+/* Header Styling */
 header {
-    background-color: #4CAF50 !important;
-    color: white;
-    padding: 40px 0;
-    text-align: center;
-}
-
-header img {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+    background-color: #ffffff; /* White background for header */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for header */
 }
 
 header h1 {
-    font-size: 8rem;
-    font-weight: bold;
-}
-
-header .profession {
-    font-size: 1.2em;
-    margin-top: 10px;
+    font-size: 2.5rem;
+    color: #333; /* Dark grey color for the name */
 }
 
 header .bio {
-    font-size: 1em;
-    margin-top: 20px;
+    color: #666; /* Medium grey text for bio */
+    font-size: 1.1rem;
 }
 
-/* Skills Section */
-.skills {
-    background-color: #ffffff;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.skills h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-/* Basic style for the tools */
+/* Tools Section */
 .tools-container {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+    background-color: #ffffff; /* White background for tools section */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 .tool {
     font-size: 1.5rem;
-    padding: 10px;
+    padding: 10px 15px;
     margin: 5px;
-    text-align: center;
-    background-color: #f1f1f1;
-    color: #333;
+    background-color: #e0e0e0; /* Light grey background for each tool */
+    color: #333; /* Dark grey color for text */
     border-radius: 5px;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* Hover Effect */
 .tool:hover {
-    background-color: #4CAF50;
+    background-color: #cccccc; /* Darker grey when hovering */
     transform: scale(1.1);
+}
+
+/* Projects Section */
+.projects ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.projects li {
+    margin: 10px 0;
+}
+
+.projects a {
+    color: #4CAF50; /* Green color for project links */
+    text-decoration: none;
+}
+
+.projects a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+.contact {
+    margin-top: 40px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #45a049; /* Darker green for hover effect */
+}
+
+/* Social Icons */
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 25px; /* Adjust icon size */
+    height: 25px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Slightly enlarge the icons on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
+}
+
+footer p {
+    font-size: 1rem;
 }
 
 /* Animation */
@@ -100,7 +155,7 @@ header .bio {
     animation: fadeIn 1s ease-out;
 }
 
-/* Add staggered animation for each tool */
+/* Staggered Animation */
 .tool:nth-child(1) {
     animation-delay: 0.2s;
 }
@@ -116,6 +171,7 @@ header .bio {
 .tool:nth-child(4) {
     animation-delay: 0.8s;
 }
+
 
 /* Projects Section */
 .projects {
