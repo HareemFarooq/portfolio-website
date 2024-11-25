@@ -1,8 +1,6 @@
 
 /* Global Styles */
 * {
-   /* Basic reset */
-* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +8,7 @@
 
 /* Body styling */
 body {
-    font-family: Arial, sans-serif; /* Change font to something simple and modern */
+    font-family: Arial, sans-serif; /* Simple and modern font */
     background-color: #f5f5f5; /* Light grey background */
     color: #333; /* Dark grey text */
     line-height: 1.6;
@@ -72,11 +70,12 @@ header .bio {
 }
 
 .projects a {
-    color: #4CAF50; /* Green color for project links */
+    color: #333; /* Dark grey color for project links */
     text-decoration: none;
 }
 
 .projects a:hover {
+    color: #4CAF50; /* Green color on hover for project links */
     text-decoration: underline;
 }
 
@@ -101,17 +100,18 @@ header .bio {
 }
 
 .contact button {
-    background-color: #4CAF50;
+    background-color: #444; /* Dark grey for the button */
     color: white;
     padding: 10px;
     border: none;
     border-radius: 4px;
     font-size: 1rem;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .contact button:hover {
-    background-color: #45a049; /* Darker green for hover effect */
+    background-color: #333; /* Even darker grey on hover */
 }
 
 /* Social Icons */
@@ -172,10 +172,9 @@ footer p {
     animation-delay: 0.8s;
 }
 
-
 /* Projects Section */
 .projects {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Light grey background */
     padding: 40px 20px;
     text-align: center;
 }
@@ -195,13 +194,13 @@ footer p {
 
 .projects a {
     text-decoration: none;
-    color: #4CAF50;
+    color: #333; /* Dark grey links */
     font-size: 1.1em;
     transition: color 0.3s ease;
 }
 
 .projects a:hover {
-    color: #333;
+    color: #4CAF50; /* Green on hover for links */
 }
 
 /* Contact Section */
@@ -237,7 +236,7 @@ footer p {
 }
 
 .contact button {
-    background-color: #4CAF50;
+    background-color: #444;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -248,7 +247,7 @@ footer p {
 }
 
 .contact button:hover {
-    background-color: #45a049;
+    background-color: #333;
 }
 
 .social-icons {
@@ -290,11 +289,11 @@ footer p {
         font-size: 2em;
     }
 
-    .skills-container {
+    .tools-container {
         flex-direction: column;
     }
 
-    .skills-container span {
+    .tools-container span {
         margin-bottom: 10px;
     }
 
@@ -306,6 +305,3 @@ footer p {
         font-size: 1em;
     }
 }
-
-
-
