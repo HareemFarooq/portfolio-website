@@ -1,36 +1,38 @@
 
-/* Global Styles */
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif; /* Simple and modern font */
-    background-color: #2d2d2d; /* Dark grey background */
-    color: #f5f5f5; /* Light grey text */
+    font-family: "Arial", sans-serif;
+    background-color: #f7f7f7; /* Light grey background */
+    color: #333333; /* Dark grey text */
     line-height: 1.6;
     padding: 20px;
 }
 
-/* Header Styling */
+/* Header */
 header {
-    background-color: #1c1c1c; /* Black background for header */
+    background-color: #ffffff; /* White header background */
+    color: #000000; /* Black text */
     padding: 20px;
+    text-align: center;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for header */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 header h1 {
     font-size: 2.5rem;
-    color: #f5f5f5; /* Light grey color for the name */
+    font-weight: bold;
 }
 
 header .bio {
-    color: #bbb; /* Lighter grey text for bio */
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    color: #555555; /* Medium grey for bio */
 }
 
 /* Tools Section */
@@ -38,232 +40,101 @@ header .bio {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
-    background-color: #333; /* Dark grey background for tools section */
-    padding: 10px;
+    background-color: #ffffff; /* White background for tools */
+    padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .tool {
-    font-size: 1.5rem;
-    padding: 10px 15px;
-    margin: 5px;
-    background-color: #555; /* Medium grey background for each tool */
-    color: #f5f5f5; /* Light grey color for text */
+    padding: 10px 20px;
+    background-color: #e8e8e8; /* Light grey */
+    color: #333333;
     border-radius: 5px;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .tool:hover {
-    background-color: #777; /* Lighter grey when hovering */
+    background-color: #d0d0d0; /* Darker grey on hover */
     transform: scale(1.1);
 }
 
 /* Projects Section */
-.projects ul {
-    list-style: none;
-    margin-top: 20px;
-}
-
-.projects li {
-    margin: 10px 0;
-}
-
-.projects a {
-    color: #f5f5f5; /* Light grey color for project links */
-    text-decoration: none;
-}
-
-.projects a:hover {
-    color: #4CAF50; /* Green color on hover for project links */
-    text-decoration: underline;
-}
-
-/* Contact Section */
-.contact {
-    margin-top: 40px;
-}
-
-.contact form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-}
-
-.contact input,
-.contact textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #444; /* Dark border for inputs */
-    border-radius: 4px;
-    font-size: 1rem;
-    background-color: #333; /* Dark grey background */
-    color: #f5f5f5; /* Light grey text */
-}
-
-.contact button {
-    background-color: #444; /* Dark grey button */
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact button:hover {
-    background-color: #333; /* Even darker grey on hover */
-}
-
-/* Social Icons */
-.social-icons a {
-    margin: 0 10px;
-    display: inline-block;
-}
-
-.social-icons img {
-    width: 25px; /* Adjust icon size */
-    height: 25px;
-    transition: transform 0.3s ease;
-}
-
-.social-icons img:hover {
-    transform: scale(1.2); /* Slightly enlarge the icons on hover */
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    margin-top: 40px;
-    background-color: #1c1c1c; /* Black background for footer */
-    color: #f5f5f5; /* Light grey text */
-    padding: 20px 0;
-}
-
-footer p {
-    font-size: 1rem;
-}
-
-/* Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.tool {
-    animation: fadeIn 1s ease-out;
-}
-
-/* Staggered Animation */
-.tool:nth-child(1) {
-    animation-delay: 0.2s;
-}
-
-.tool:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-.tool:nth-child(3) {
-    animation-delay: 0.6s;
-}
-
-.tool:nth-child(4) {
-    animation-delay: 0.8s;
-}
-
-/* Projects Section */
 .projects {
-    background-color: #333; /* Dark grey background */
-    padding: 40px 20px;
-    text-align: center;
+    background-color: #ffffff; /* White background for projects */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .projects h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #f5f5f5; /* Light grey text for header */
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333333; /* Dark grey */
 }
 
 .projects ul {
     list-style-type: none;
 }
 
-.projects li {
-    margin: 10px 0;
-}
-
 .projects a {
+    color: #4A90E2; /* Accent blue for links */
     text-decoration: none;
-    color: #f5f5f5; /* Light grey links */
-    font-size: 1.1em;
+    font-size: 1.1rem;
     transition: color 0.3s ease;
 }
 
 .projects a:hover {
-    color: #4CAF50; /* Green on hover for links */
+    color: #357ABD; /* Darker blue on hover */
+    text-decoration: underline;
 }
 
 /* Contact Section */
 .contact {
-    background-color: #1c1c1c; /* Black background */
-    padding: 40px 20px;
+    background-color: #ffffff; /* White background for contact */
+    padding: 20px;
+    margin: 20px 0;
     text-align: center;
-}
-
-.contact h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #f5f5f5; /* Light grey text */
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .contact form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
 }
 
-.contact input, .contact textarea {
-    width: 100%;
-    max-width: 500px;
+.contact input,
+.contact textarea {
     padding: 10px;
-    border: 1px solid #444;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1em;
-    background-color: #333;
-    color: #f5f5f5;
+    font-size: 1rem;
+    width: 100%;
 }
 
 .contact button {
-    background-color: #444;
-    color: white;
-    padding: 10px 20px;
+    background-color: #4A90E2;
+    color: #ffffff;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: 1rem;
     transition: background-color 0.3s ease;
 }
 
 .contact button:hover {
-    background-color: #333;
+    background-color: #357ABD;
 }
 
-.social-icons {
-    margin-top: 20px;
-}
-
-.social-icons a {
-    margin: 0 10px;
-}
-
+/* Social Icons */
 .social-icons img {
-    width: 40px;
+    width: 30px;
+    margin: 0 10px;
     transition: transform 0.3s ease;
 }
 
@@ -271,43 +142,11 @@ footer p {
     transform: scale(1.2);
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
     text-align: center;
-    background-color: #1c1c1c; /* Black background */
-    color: #f5f5f5; /* Light grey text */
-    padding: 20px 0;
+    margin-top: 20px;
+    color: #777777; /* Light grey */
+    padding: 10px;
+    font-size: 0.9rem;
 }
-
-footer p {
-    font-size: 1em;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    header {
-        padding: 20px 0;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-
-    .tools-container {
-        flex-direction: column;
-    }
-
-    .tools-container span {
-        margin-bottom: 10px;
-    }
-
-    .contact form {
-        width: 90%;
-    }
-
-    .projects a {
-        font-size: 1em;
-    }
-}
-
-  
