@@ -9,7 +9,7 @@
 /* Body Styling */
 body {
     font-family: "Arial", sans-serif;
-    background-color: #f7f7f7; /* Light grey background */
+    background-color: #e0f7fa; /* Light sea green background */
     color: #333333; /* Dark grey text */
     line-height: 1.6;
     padding: 20px;
@@ -33,22 +33,24 @@ header h1 {
 header .bio {
     font-size: 1.2rem;
     color: #555555; /* Medium grey for bio */
+    text-align: center; /* Align the bio in the center */
+    margin: 10px 0;
 }
 
 /* Tools Section */
 .tools-container {
     display: flex;
     justify-content: center; /* Center align tools horizontally */
-    align-items: center; /* Center align tools vertically if needed */
+    align-items: center; /* Center align tools vertically */
     margin-top: 20px;
-    background-color: #121212; /* Minimal black theme background */
+    background-color: #ffffff; /* White background for tools section */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 .tool {
-    font-size: 2rem; /* Increase font size */
+    font-size: 2.5rem; /* Increased font size */
     padding: 15px 25px; /* Adjust padding for better spacing */
     margin: 10px; /* Add spacing between tools */
     background-color: #1f1f1f; /* Dark grey background */
@@ -62,7 +64,6 @@ header .bio {
     background-color: #333; /* Slightly lighter grey on hover */
     transform: scale(1.1); /* Add hover scale effect */
 }
-
 
 /* Projects Section */
 .projects {
@@ -81,6 +82,9 @@ header .bio {
 
 .projects ul {
     list-style-type: none;
+    text-align: left; /* Align project list to the left */
+    margin: 0;
+    padding: 0;
 }
 
 .projects a {
