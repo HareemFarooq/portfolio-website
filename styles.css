@@ -39,6 +39,7 @@ section {
     margin: 0 auto;
 }
 
+/* Bio and Image Section Styling */
 .bio, .image {
     display: inline-block;
     vertical-align: top;
@@ -68,7 +69,75 @@ section {
 /* Hover Effect */
 .image img:hover {
     transform: scale(1.05); /* Enlarge the image slightly on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Larger shadow */
+}
+
+/* Contact Form Styling */
+#contact {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Form Container */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for the form */
+}
+
+/* Form Input Fields */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: all 0.3s ease; /* Smooth transition for focus state */
+}
+
+/* Input Field Focus */
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #5cb85c; /* Green border on focus */
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.3); /* Optional: light green shadow */
+}
+
+/* Textarea Specific Styling */
+textarea {
+    resize: vertical; /* Allows user to resize textarea vertically */
+    min-height: 150px; /* Minimum height for better text area visibility */
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+    padding: 15px;
+    font-size: 18px;
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #34495e; /* Slightly darker background on hover */
 }
 
 .project-card {
