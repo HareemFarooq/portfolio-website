@@ -55,9 +55,12 @@ section {
 }
 
 .image img {
-    max-width: 100%;
-    border-radius: 50%;
-    height: 200px;
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Make sure the height and width are the same for a perfect circle */
+    border-radius: 50%; /* This makes the image round */
+    object-fit: cover; /* Ensures the image fits within the circle without distortion */
+    border: 3px solid #fff; /* Optional: Adds a white border around the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
 }
 
 .project-card {
