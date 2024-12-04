@@ -208,27 +208,81 @@ button[type="submit"]:hover {
 }
 
 .project-card {
-    background-color: #fff;
+    /* Projects Section Styling */
+#projects {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+#projects h2 {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Project Card Styling */
+.project-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Slight hover lift */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Project Icon Styling */
+.project-icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 50%; /* Circular icon */
+    border: 3px solid #2980b9; /* Blue border for icon */
+}
+
+/* Project Content Styling */
+.project-content {
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card h3 {
     font-size: 1.8em;
     color: #2c3e50;
+    margin-bottom: 10px;
 }
 
 .project-card p {
     font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
 }
 
 .project-card a {
     display: inline-block;
-    margin-top: 10px;
+    background-color: #2980b9;
+    color: white;
     text-decoration: none;
-    color: #2980b9;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: #3498db; /* Lighter blue on hover */
+}
+
 }
 
 footer {
