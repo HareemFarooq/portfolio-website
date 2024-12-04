@@ -140,6 +140,73 @@ button[type="submit"]:hover {
     background-color: #34495e; /* Slightly darker background on hover */
 }
 
+* Blog Section Styling (Add this after your existing styles) */
+#blog {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#blog h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Blog Card Styling */
+.blog-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px); /* Slight upward movement on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Blog Image Styling */
+.blog-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;  /* Circular image */
+    margin-right: 20px;
+}
+
+/* Blog Content Styling */
+.blog-content {
+    flex-grow: 1;
+}
+
+.blog-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.blog-content a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.blog-content a.btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
 .project-card {
     background-color: #fff;
     padding: 20px;
